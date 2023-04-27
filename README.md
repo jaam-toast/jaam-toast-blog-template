@@ -1,0 +1,1 @@
+# Jaamtoast Blog Template
