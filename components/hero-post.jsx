@@ -1,5 +1,3 @@
-import DateFormatter from "./date-formatter";
-
 const HeroPost = () => {
   return (
     <section className="mb-5">
