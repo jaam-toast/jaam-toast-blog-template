@@ -15,10 +15,14 @@ export default function Post() {
   const router = useRouter();
 
   const { slug } = router.query;
+  // TODO
+  const schemaName = "schemaName";
 
   useEffect(() => {
     (async () => {
-      const { data } = await axios(`http://localhost:8000/api/test/${slug}`);
+      const { data } = await axios(
+        `http://localhost:8000/api//storage/${schemaName}/${slug}`
+      );
 
       setPost(data.result);
     })();

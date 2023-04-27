@@ -10,9 +10,14 @@ import { CMS_NAME } from "../lib/constants";
 export default function Index() {
   const [posts, setPosts] = useState();
 
+  // TODO
+  const schemaName = "schemaName";
+
   useEffect(() => {
     (async () => {
-      const { data } = await axios("http://localhost:8000/api/test");
+      const { data } = await axios(
+        `http://localhost:8000/api/storage/${schemaName}`
+      );
 
       if (!data) return;
 
