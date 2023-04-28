@@ -21,12 +21,12 @@ export default function Post() {
 
   const schemaName = "posts";
   const token =
-    "eyJhbGciOiJIUzI1NiJ9.dmFjaGVsaW4.3iS1QS2ZRi2ymT_BW3g3Y8LhdMC-eZPTEzUR2bKv8Jw";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphYW0tdG9hc3QtYmxvZyIsImlhdCI6MTY4MjY2MDA1N30.0wERiY_GrTVAZqRwm2qNAZkc_oErq7KiKLpsKM-W4yU";
 
   useEffect(() => {
     (async () => {
       const { data } = await axios(
-        `http://localhost:8000/api/storage/${schemaName}`,
+        `http://localhost:8000/api/storage/${schemaName}/contents`,
         {
           method: "GET",
           headers: {

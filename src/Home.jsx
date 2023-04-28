@@ -46,7 +46,7 @@ export default function Home() {
   // TODO
   const schemaName = "posts";
   const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphbXRvdGVzdDAwMDEtMTZhZWpmeSIsImlhdCI6MTY4MjY1NzYzMH0.hOOCnqu0r8p7H2uxTZJ72EhRDWeBHZuDJbz159beW6E";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphYW0tdG9hc3QtYmxvZyIsImlhdCI6MTY4MjY2MDA1N30.0wERiY_GrTVAZqRwm2qNAZkc_oErq7KiKLpsKM-W4yU";
 
   useEffect(() => {
     (async () => {
