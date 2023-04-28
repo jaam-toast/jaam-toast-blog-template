@@ -6,8 +6,10 @@ import MoreStories from "./components/MoreStories";
 import PostPreview from "./components/PostPreview";
 
 const schemaName = "posts";
+// const token =
+//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphYW0tdG9hc3QtYmxvZyIsImlhdCI6MTY4MjY2MDA1N30.0wERiY_GrTVAZqRwm2qNAZkc_oErq7KiKLpsKM-W4yU";
 const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphYW0tdG9hc3QtYmxvZyIsImlhdCI6MTY4MjY2MDA1N30.0wERiY_GrTVAZqRwm2qNAZkc_oErq7KiKLpsKM-W4yU";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphYW0tdG9hc3QtYmxvZzIiLCJpYXQiOjE2ODI2Njc5NjJ9.fWfht2DUUOllTNir5oHtnOCgfb0dy8glT8G7Qmu7ioU";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
