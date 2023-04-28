@@ -8,9 +8,12 @@ const PostPreview = ({ title, slug, post }) => {
   };
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col pointer-cursor ">
       <h3 className="title">
-        <div className="hover:underline pointer-cursor" onClick={handleClick}>
+        <div
+          className="hover:underline pointer-cursor border"
+          onClick={handleClick}
+        >
           {title}
         </div>
       </h3>

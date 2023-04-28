@@ -51,7 +51,7 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const { data } = await axios(
-        `http://localhost:8000/api/storage/${schemaName}`,
+        `http://localhost:8000/api/storage/${schemaName}/contents`,
         {
           method: "GET",
           headers: {
