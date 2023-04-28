@@ -5,48 +5,12 @@ import HeroPost from "./components/HeroPost";
 import MoreStories from "./components/MoreStories";
 import PostPreview from "./components/PostPreview";
 
-export const schema = {
-  schemaName: "post",
-  schema: {
-    title: "post",
-    type: "object",
-    properties: {
-      picture: {
-        type: "string",
-        description: "text",
-      },
-      title: {
-        type: "string",
-        description: "textarea",
-      },
-      slug: {
-        type: "string",
-        description: "text",
-      },
-      post: {
-        type: "string",
-        description: "textarea",
-      },
-    },
-  },
-};
-
-const test = [
-  {
-    picture:
-      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*MlatNnQUaDRjxlh35YVZRg.png",
-    title: "Where does it come from?",
-    post: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  },
-];
+const schemaName = "posts";
+const token =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphYW0tdG9hc3QtYmxvZyIsImlhdCI6MTY4MjY2MDA1N30.0wERiY_GrTVAZqRwm2qNAZkc_oErq7KiKLpsKM-W4yU";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
-
-  // TODO
-  const schemaName = "posts";
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0TmFtZSI6ImphYW0tdG9hc3QtYmxvZyIsImlhdCI6MTY4MjY2MDA1N30.0wERiY_GrTVAZqRwm2qNAZkc_oErq7KiKLpsKM-W4yU";
 
   useEffect(() => {
     (async () => {
@@ -87,6 +51,7 @@ export default function Home() {
                 <PostPreview
                   title={post.title}
                   key={post._id}
+                  id={post._id}
                   slug={post._id}
                   post={post.post}
                 />
